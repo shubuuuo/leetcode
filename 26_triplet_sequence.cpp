@@ -10,11 +10,10 @@ bool increasingTriplet(vector<int>& nums) {
 
     for (int num : nums) {
         if (num <= first) {
-            first = num; // smallest so far
+            first = num; 
         } else if (num <= second) {
-            second = num; // second smallest so far
+            second = num; 
         } else {
-            // Found a number greater than both -> triplet exists
             return true;
         }
     }
@@ -23,7 +22,7 @@ bool increasingTriplet(vector<int>& nums) {
 }
 
 int main() {
-    vector<int> nums = {2, 1, 5, 0, 4, 6}; // Example
-    cout << (increasingTriplet(nums) ? "true" : "false") << endl; // Output: true
+    vector<int> nums = {2, 1, 5, 0, 4, 6}; 
+    cout << (increasingTriplet(nums) ? "true" : "false") << endl; 
     return 0;
 }
