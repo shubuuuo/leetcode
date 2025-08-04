@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+class Solution {
+public:
+    int twoSum(std::vector<int>& arr, int target) {
+        
+        int xor1 = 0;
+        int xor2 = 0;
+
+        int n = arr.size();
+
+        for (int i = 0; i < n; i++)
+        {
+            xor2 = xor2 ^ arr[i];
+            xor1 = xor1 ^ (i + 1);
+        }
+        xor1 = xor1 ^ (n+1);
+        
+        return xor1 ^ xor2;
+    }
+};
+
+int main() {
+    Solution solution;
+    std::vector<int> arr = {1, 2, 4, 5};
+    int target = 5;
+    int result = solution.twoSum(arr, target);
+    std::cout << result;
+    return 0;
+}
