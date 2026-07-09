@@ -11,7 +11,6 @@ class TreeNode {
 }
 
 class Solution {
-  // Iterative Inorder Traversal
   preorderTraversal(root: TreeNode | null): number[] {
     let result: number[] = [];
     let st: TreeNode[] = [];
@@ -26,7 +25,7 @@ class Solution {
 
       // Current must be null at this point
       current = st.pop()!;
-      result.push(current.data); // Add the node data
+      result.push(current.val); // Add the node data
 
       // We have visited the node and its left subtree. Now, visit the right subtree.
       current = current.right;
@@ -43,10 +42,25 @@ class Solution {
 
     return [
       ...this.preagain(root.left),
-      root.data,
+      root.val,
       ...this.preagain(root.right),
     ];
   }
+}
+
+function inorderTraversal(root: TreeNode | null): number[] {
+  const result: number[] = [];
+
+  function traverse(node: TreeNode | null) {
+    if (!node) return;
+
+    traverse(node.left);
+    result.push(node.val);
+    traverse(node.right);
+  }
+
+  traverse(root);
+  return result;
 }
 
 function main(): void {
