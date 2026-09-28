@@ -2,7 +2,7 @@
 
 Daily notes, solutions, and learnings from my LeetCode practice will be posted here, Which I am doing by following [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/), one topic at a time.
 
-Feel free to open an issue or PR if you spot a mistake or a better approach — always looking to improve 🙂
+Feel free to open an issue or PR if you spot a mistake or a better approach, always looking to improve 🙂
 
 ---
 
@@ -11,7 +11,7 @@ Feel free to open an issue or PR if you spot a mistake or a better approach — 
 This repo is my personal log of DSA practice: topic-wise problem solving, daily challenges, and notes on what I learned along the way. Solutions are written in whichever language fits best for the problem, **C++**, **TypeScript**, or **Python**.
 
 - Following: Striver's A2Z DSA Course
-- Daily LeetCode Challenge — solved and logged in `09_daily`
+- Daily LeetCode Challenge, solved and logged in `09_daily`
 - Languages: C++ · TypeScript · Python
 
 ---
@@ -71,7 +71,7 @@ Each solved problem typically includes:
 
 ## Contributing / Feedback
 
-This is a learning log, not a polished library — if you see a bug, a cleaner approach, or a better complexity, I'd genuinely appreciate a correction. Open an issue or drop a PR!
+This is a learning log, not a polished library, if you see a bug, a cleaner approach, or a better complexity, I'd genuinely appreciate a correction. Open an issue or drop a PR!
 
 ---
 
